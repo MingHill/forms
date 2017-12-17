@@ -26,11 +26,13 @@ label {
   position: absolute;
   top: 8px;
   margin: 0 20px;
-}
-label:not(.hidden) {
-  opacity: 1;
-  transition: display 200ms ease-in-out;
-}
-.hidden {
+  color: rgb(0, 200, 0);
   opacity: 0;
+  text-transform: uppercase;
+}
+/*label:not(.hidden) {
+}*/
+.showLabel {
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
 }
