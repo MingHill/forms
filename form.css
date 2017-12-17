@@ -9,19 +9,28 @@ form {
   background-color: rgba(230, 234, 237, 0.95);
   box-shadow: 0 0 8px;
 }
+.inputWrapper {
+  position: relative;
+  margin: 4px 0;
+}
 input {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+  padding: 1.5em 1em;
   height: 4em;
   width: 100%;
-  padding: 1em;
-  border-radius: 3px;
-  margin: 5px;
+  border: 2px solid transparent;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+label {
+  position: absolute;
+  top: 8px;
+  margin: 0 20px;
 }
 label:not(.hidden) {
-  display: block;
+  opacity: 1;
   transition: display 200ms ease-in-out;
 }
 .hidden {
-  display: none;
+  opacity: 0;
 }
