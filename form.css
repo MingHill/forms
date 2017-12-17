@@ -19,9 +19,9 @@ input {
   margin: 5px;
 }
 label:not(.hidden) {
-  opacity: 1;
-  transition: opacity 200ms ease-in-out;
+  display: block;
+  transition: display 200ms ease-in-out;
 }
 .hidden {
-  opacity: 0;
+  display: none;
 }
